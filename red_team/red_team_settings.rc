@@ -1,0 +1,16 @@
+# ~/.msf4/msfconsole.rc
+
+
+## MSF Resource Script to set important settings for engagments.
+## Taken from Joe Vest's book, "Red Team Development & Operations"
+spool /root/.msf4/spool.log
+setg ConsoleLogging True
+setg verbose true
+setg LogLevel 5
+setg SessionLogging true
+setg TimestampOutput True
+setg PromptTimeFormat %Y%m%d.%H%M%S%z
+setg PROMPT %T S:%s J:%J
+setg ExitOnSession false
+setg DisableCourtesyShell true
+load sounds #optional
